@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
+import {useEffect, useState} from 'react'
+import loaderBakcground from './images/loader-background.png'
 function App() {
+
+const [ load, setLoad ] = useState(true)
+  window.onload = () =>  setLoad(false)
+
+  const idk = () => { 
+    if(load === false ) {
+    const loader = document.getElementById('loader')
+    loader.classList.add('hide')
+    console.log('hola')
+  }
+}
+
+  useEffect( () => {
+    const timeot = setTimeout( () => idk(), 3000)
+    return () => clearTimeout(timeot)
+  },[load])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="main-container">
+        <div id="loader" className={`loader ${ load ? 'loading' : 'noloading'}`}>
+          <img alt="i love you" src={loaderBakcground}/>
+          <span>Cargando...</span>
+        </div>
+      </div>
   );
 }
 
