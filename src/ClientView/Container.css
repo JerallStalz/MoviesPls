@@ -1,0 +1,12 @@
+.container {
+  padding-top: 80px;
+  width: 80%;
+  height: auto;
+  min-height: 700px;
+  margin: 0 auto;
+  background: rgba(48,48,48);
+  color: #ffffff;
+}
+body {
+  background: rgba(0, 0, 0, 0.9);
+}

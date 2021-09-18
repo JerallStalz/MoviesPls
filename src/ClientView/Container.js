@@ -1,12 +1,17 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import Header from "./components/Header"
+import "./Container.css"
 
 const Container = (props) => {
   return(
     <div>
-      <LoadRouters routes={props.routes}/>
+      <Header/>
+      <div className="container">
+        <LoadRouters routes={props.routes}/>
+      </div>
     </div>
-  )
+  ) 
 }
 
 function LoadRouters({ routes }) {

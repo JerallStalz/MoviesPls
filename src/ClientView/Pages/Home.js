@@ -1,5 +1,10 @@
+import "./Home.css"
+import TrailerSlider from "../components/TrailerSlider"
 const Home = () => {
-  return(<h1>Home</h1>)
+  return(
+  <div className="home">
+    <TrailerSlider />
+  </div>)
 }
 
 export default Home
