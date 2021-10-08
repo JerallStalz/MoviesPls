@@ -1,12 +1,17 @@
 .container {
   padding-top: 80px;
   width: 80%;
-  height: auto;
-  min-height: 700px;
+  min-height: 100vh;
   margin: 0 auto;
-  background: rgba(48,48,48);
+  background: #1e1e1e;
   color: #ffffff;
+  max-width: 1600px;
 }
 body {
-  background: rgba(0, 0, 0, 0.9);
+  background: #161616;
+}
+
+.menu-sider__container {
+  top: 80px;
+  z-index: 100;
 }

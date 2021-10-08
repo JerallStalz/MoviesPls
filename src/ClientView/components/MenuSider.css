@@ -1,0 +1,34 @@
+.menu-sider__container {
+  height: calc(100vh - 80px);
+  width: 100vw;
+  position: fixed;
+  background: rgba(0,0,0,.8);
+  left: -100vw;
+}
+.menu-sider {
+  width: 100%;
+  height: 100%;
+  background: #181818;
+  max-width: 400px;
+}
+.menu-sider .categories-menu {
+  margin-bottom: 20px;
+}
+
+.menu-sider__search-bar__container {
+  background: rgba(20,20,20);
+  padding: 10px;
+}
+
+.open {
+  left: 0
+}
+.menu-sider__switch-container {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  background: rgba(20,20,20);
+
+}

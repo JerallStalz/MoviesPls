@@ -8,16 +8,22 @@
 }
 .header-logo {
   position: absolute;
-  left: 5%;
+  left: 60px;
   height: 100%;
   width: fit-content;
+  cursor: pointer;
+  transition: 200ms;
 }
 .header-logo img {
   padding: 25px;
-}
-.header-logo img {
+  transition: 200ms;
   max-height: 100%;
 }
+.header-logo img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0px 0px 6px rgba(255,255,255,.4));
+}
+
 .header-menu {
   height: 100%;
   padding-left: 10px;
@@ -25,7 +31,16 @@
   border: none;
   position: relative;
   left: 0;
+  cursor: pointer;
+  text-shadow: 2px 2px 2px white;
 }
+.header-menu:active svg{
+  transform: scale(0.92);
+}
+.header-menu:hover {
+  transform: scale(1.05);
+}
+
 .header-menu svg {
   font-size: 50px;
   color: #ffffff;
@@ -33,4 +48,14 @@
 .header form {
   position: absolute;
   right: 0;
+}
+.header.active .search-bar {
+  display: none;
+}
+.header.active .switch-container {
+  display: none;
+}
+.header .switch-container {
+  position: absolute;
+  right: 260px;
 }

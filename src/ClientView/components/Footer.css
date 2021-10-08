@@ -1,0 +1,32 @@
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(20, 20, 20);
+}
+
+/* Component footer: item: buttons  */
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  padding-top: 10px;
+}
+.footer-buttons a svg {
+  color: white;
+  font-size: 40px;
+  margin: 0 30px;
+}
+.footer-buttons a svg:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0px 0px 4px rgba(255,255, 255, .3));
+}
+
+/* Component footer: item: legend  */
+.footer-legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+}

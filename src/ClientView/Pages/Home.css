@@ -1,38 +1,7 @@
-.trailer-iframe {
-  width: 100%;
-  border: none;
-  flex-grow: 1;
-  padding: 0 2px;
+.trailer-slider {
+  margin-bottom: 2px;
 }
-.trailer-text {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  position: relative;
-}
-.trailer-text span {
-  font-size: 30px;
-  font-weight: 400;
-  padding-bottom: 10px;
-}
-.trailer-text p {
-  height: 55px;
-  overflow: hidden;
-}
-.trailer-text button {
-  background: transparent;
-  color: rgba(255, 255, 255,.6);
-  border: none;
-  font-size: 19px;
-  width: 120px;
-  position: absolute;
-  right: 15px;
-  bottom: -15px;
-}
-.trailer {
-  min-width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 30px;
+
+.home {
+  padding-bottom: 20px;
 }

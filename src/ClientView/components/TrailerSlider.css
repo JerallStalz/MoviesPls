@@ -1,12 +1,16 @@
 .trailer-slider {
   min-width: 100%;
-  height: 550px;
+  height: calc( 450px + 20vw);
   display: flex;
   flex-direction: row;
   overflow: hidden;
   background: rgb(20,20,20);
   position: relative;
 }
+.trailer-slider::-webkit-scrollbar {
+  display: none;
+}
+
 .trailer-slider__container {
   position: relative;
 }
@@ -16,7 +20,8 @@
   font-size: 30px;
   height: 100px;
   background: rgba(50,50,50,0.4);
-
+  color: #fff;
+  border: none;
   z-index: 10;
   cursor: pointer;
 }
