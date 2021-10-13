@@ -4,6 +4,7 @@ import Iframe from "react-iframe"
 import { useHistory } from "react-router"
 import {RiArrowLeftSLine} from "react-icons/ri"
 import { useEffect } from "react"
+import { Helmet } from "react-helmet"
 
 const Movie = () => {
   const actualSelected = useSelector(state => state.actualSelected)
@@ -22,6 +23,9 @@ const Movie = () => {
     } else {
       return(
         <div className="movie">
+          <Helmet>
+            <title> {actualSelected.name} - MoviesPls</title>
+          </Helmet>
           <button className="go-back__arrow" onClick={history.goBack}>
             <RiArrowLeftSLine/>
             <span>Volver</span>

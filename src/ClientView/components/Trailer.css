@@ -1,8 +1,13 @@
 .trailer-iframe {
+  padding-bottom: 56.25%;
+  height: 0;
+  position: relative;
+}
+.trailer-iframe iframe {
+  position: absolute;
+  height: 100%;
   width: 100%;
   border: none;
-  flex-grow: 1;
-  padding: 0 2px;
 }
 .trailer-text {
   display: flex;

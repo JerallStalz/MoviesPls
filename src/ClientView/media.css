@@ -70,7 +70,7 @@
   }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 760px) {
   .header .switch-container {
     display: none;
   }

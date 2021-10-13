@@ -49,7 +49,9 @@ const Trailer = ({data}) => {
 
   return (
     <div className="trailer">
-    <Iframe className="trailer-iframe" src={data.trailers[0]} allowFullScreen onLoad={console.log("sexo")} ></Iframe>
+    <div style={{paddingBottom: '56.25%'}} className="trailer-iframe">
+      <Iframe src={data.trailers[0]} allowFullScreen ></Iframe>
+    </div>
     <div className={`trailer-text ${fold ? "fold" : "" }`}>
       <Link to="/movie" onClick={()=> selectFocusFn(data)}>{data.name}</Link>
         <p ref={ref} >{data.synopsis}</p>

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet"
 import { RiArrowLeftSLine } from "react-icons/ri"
 import { useSelector, useDispatch } from "react-redux"
 import { Link } from "react-router-dom"
@@ -14,7 +15,7 @@ const Search = () => {
   const toRender = (data) => {
     if (data.length === 0 && !loading) {
       return (
-        <h2>No se encontraron resultados para la busqueda, intente de nuevo</h2>
+        <h4>No se encontraron resultados para la busqueda, intente de nuevo</h4>
       )
     } else if(loading) {
       return (
@@ -42,11 +43,14 @@ const Search = () => {
 
   return(
   <div className="search">
+    <Helmet>
+      <title>Buscando: {actualSearch ? actualSearch : ''} - MoviesPls</title>
+    </Helmet>
     <Link to="/" className="search-back__button">
       <RiArrowLeftSLine/>
       <span>Volver al inicio</span>
     </Link>
-    <h2 className="search-title">{actualSearch ?`Resultados: ${actualSearch}` : ""}</h2>
+    <h2 className="search-title">{actualSearch ?`Resultados de ${actualSearch}:` : ""}</h2>
     { toRender(searchData) }
   </div>)
 }
